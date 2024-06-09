@@ -7,6 +7,12 @@ keymap.set("i", "jk", "<Esc>")
 keymap.set("i", "kj", "<Esc>")
 keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<cr>")
 
+-- Keep cursor at the bottom of the visual selection after you yank it.
+keymap.set("v", "y", "ygv<Esc>")
+
+-- Prevent selecting and pasting from overwriting what you originally copied.
+keymap.set("x", "p", "pgvy")
+
 -- vim-tmux-navigator
 if os.getenv("TMUX") then
   keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>")
