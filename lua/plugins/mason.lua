@@ -11,6 +11,7 @@ return {
         "ruff-lsp",
         "black",
         "mypy",
+        "debugpy",
         "clangd",
         "clang-format",
       },
